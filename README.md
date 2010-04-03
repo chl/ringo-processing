@@ -1,6 +1,6 @@
 # ringo-processing
 
-ringo/processing is a [RingoJS](http://ringojs.org/) package that allows you to write [Processing](http://www.processing.org/) sketches in ([modern](https://developer.mozilla.org/en/New_in_JavaScript_1.8)) JavaScript.
+ringo-processing is a [RingoJS](http://ringojs.org/) package that allows you to write [Processing](http://www.processing.org/) sketches in ([modern](https://developer.mozilla.org/en/New_in_JavaScript_1.8)) JavaScript.
 
 ## Warning
 
@@ -24,7 +24,7 @@ Samples will be collected in a separate [ringo-processing-samples](http://github
 
 With minor divergences (see below), the [Processing API](http://www.processing.org/reference/) as you know and (hopefully) love it is available as you'd expect.
 
-ringo/processing currently supports two styles of writing sketches.
+ringo-processing currently supports two styles of writing sketches.
 
 ### Simple Style
 
@@ -85,7 +85,7 @@ This second style is particularly useful if you want to package sketches as re-u
 
 ## Live-Coding
 
-Of course! Just start `ringo`, wire up ringo/processing and let it roll.
+Of course! Just start `ringo`, wire up ringo-processing and let it roll.
 
 A typical (if not particularly exciting) REPL session might look like that:
 
@@ -136,9 +136,9 @@ Support for sketch-specific libraries is forthcoming.
 
 ## License
 
-ringo/processing is available under the same license as RingoJS.
+ringo-processing is available under the same license as RingoJS.
 
-Processing, core components of which are bundled with ringo/processing, is distributed under the terms of the GNU Lesser General Public License.
+Processing, core components of which are bundled with ringo-processing, is distributed under the terms of the GNU Lesser General Public License.
 
 ## Footnotes
 
