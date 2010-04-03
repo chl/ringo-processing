@@ -1,0 +1,3 @@
+javac -cp ../jars/core.jar:`ringo -e 'print(require("ringo/engine").getRingoHome().path)'`/lib/js.jar ringo/processing/Applet.java 
+jar cvf ../jars/applet.jar ringo/processing/Applet.class
+rm ringo/processing/Applet.class
