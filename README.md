@@ -4,9 +4,13 @@ ringo-processing is a [RingoJS](http://ringojs.org/) package that allows you to 
 
 ## Warning
 
-This is alpha code and (as of today) completely untested on anything other than OS X.
+This is alpha code and mostly untested on anything other than OS X.
 
 If you have questions (or answers!) please get in touch (on e.g. the [RingoJS mailing list](http://groups.google.com/group/ringojs) or the [#ringojs IRC channel on Freenode](irc://irc.freenode.net/ringojs)).
+
+## News
+
+- 2010-04-06: A first version of `ringo/processing/web` is in.
 
 ## Installation
 
@@ -100,6 +104,14 @@ A typical (if not particularly exciting) REPL session might look like that:
     t = 25
     ...
 
+In order to run and modify an existing sketch interactively, explore the `ringo` `-i` option:
+
+    ringo -i ringo-processing-samples/lp/example-9-8.js
+
+## Web Applications
+
+For now, see [ringo/processing/web/demo](http://github.com/chl/ringo-processing/tree/master/lib/ringo/processing/web/demo/). More spectacular documentation is being prepared.
+
 ## Processing Libraries
 
 Work in progress. Only OpenGL tested so far. Use `use`:
@@ -127,12 +139,15 @@ Support for sketch-specific libraries is forthcoming.
 
 ## Plans/Todo
 
-- Web application PGraphics2D sugar: ImageResponse?
 - A runner (to do away with boilerplate code in simple mode)
 - A "control panel" similar to what ruby-processing offers
 - Higher-order library (grid, eachPoint &c.)?
 - NodeBox-like color utilities
 - Probably not: Applet (web) export
+
+## Done
+
+- Web application PGraphics sugar: ImageResponse &c.
 
 ## License
 
