@@ -147,7 +147,7 @@ Support for sketch-specific libraries is forthcoming.
 
 ## Done
 
-- Web application PGraphics sugar: ImageResponse &c.
+- Web application PGraphics sugar: imageResponse &c.
 
 ## License
 
