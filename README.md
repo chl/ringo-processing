@@ -110,7 +110,7 @@ In order to run and modify an existing sketch interactively, explore the `ringo`
 
 ## Web Applications
 
-For now, see [ringo/processing/web/demo](http://github.com/chl/ringo-processing/tree/master/lib/ringo/processing/web/demo/). More spectacular documentation is being prepared.
+For now, see [samples/web](http://github.com/chl/ringo-processing/tree/master/samples/web). More spectacular documentation is being prepared.
 
 ## Processing Libraries
 
