@@ -17,11 +17,7 @@
         "web": "http://robert42.com/",
         "email": "r.thurnher@gmail.com"
     }],
-    "bugs": {},
     "licenses": [],
-    "repositories": [],
-    "dependencies": {},
-    "engines": ["ringojs"],
     "directories": {
         "lib": "lib",
         "jars": [
