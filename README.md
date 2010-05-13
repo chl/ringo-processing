@@ -10,7 +10,8 @@ If you have questions (or answers!) please get in touch (on e.g. the [RingoJS ma
 
 ## News
 
-- 2010-04-06: A first version of `ringo/processing/web` is in.
+- 2010-05-09: Support for sketch-specific libraries
+- 2010-04-06: First version of `ringo/processing/web`
 
 ## Installation
 
@@ -18,11 +19,11 @@ Once you have a [working RingoJS installation](http://github.com/ringo/ringojs#r
 
     ringo-admin install chl/ringo-processing
 
-Alternatively, simply check out this Git repository inside the RingoJS `packages` directory.
+Alternatively, simply check out this repository inside the RingoJS `packages` directory.
 
 ## Samples
 
-Samples will be collected in a separate [ringo-processing-samples](http://github.com/chl/ringo-processing-samples) project.
+Samples live in a separate [ringo-processing-samples](http://github.com/chl/ringo-processing-samples) project.
 
 ## API
 
@@ -122,20 +123,18 @@ Work in progress. Only OpenGL tested so far. Use `use`:
         ...
     }
 
-Support for sketch-specific libraries is forthcoming.
-
 ## Caveats
 
-- Performance: If you want speed, you'll probably need to use Java.
-- Initialization: While `wire` sets up all functions, properties &c., actually using the Processing API will only work after calling `run` (which initializes the Processing applet). In other words: Apart from variable declarations, most initialization code should go into `setup`.
-- Threads: Be advised that at least two threads are involved - the Swing event dispatching thread and the Processing animation thread. To ensure that code executes on the correct thread, call Processing API functions only from the Processing event handlers (`setup`, `draw` &c.); in case you need to interact with Swing, look up `invokeLater`/`invokeAndWait` in [SwingUtilities](http://java.sun.com/javase/6/docs/api/javax/swing/SwingUtilities.html).
-- OpenGL sketches & REPL API interaction: Leads to segfaults (probably due to threading issues).
+- Performance: If you want speed, you'll probably need to use Java (or Scala, or Clojure ...).
+- Initialization: While `wire` sets up all functions, properties &c., actually using the Processing API will only work after calling `run` (which initializes the Processing applet). Apart from variable declarations, most initialization code should go into `setup`.
+- Threading: Be advised that at least two threads are involved - the Swing event dispatching thread and the Processing animation thread. To ensure that code executes on the correct thread, call Processing API functions only from the Processing event handlers (`setup`, `draw` &c.); in case you need to interact with Swing, look up `invokeLater`/`invokeAndWait` in [SwingUtilities](http://java.sun.com/javase/6/docs/api/javax/swing/SwingUtilities.html).
+- OpenGL sketches & REPL API interaction leads to segfaults (maybe due to threading issues?).
 
 ## Related Projects
 
-- [ruby-processing](http://github.com/jashkenas/ruby-processing): The gold standard when it comes to dynamic-language Processing wrappers.
-- [Spde](http://technically.us/spde/About)
+- [ruby-processing](http://github.com/jashkenas/ruby-processing): The gold standard.
 - [incanter-processing](http://data-sorcery.org/2009/08/30/processing-intro/)
+- [Spde](http://technically.us/spde/About)
 
 ## Plans/Todo
 
@@ -157,4 +156,4 @@ Processing, core components of which are bundled with ringo-processing, is distr
 
 ## Footnotes
 
-<sup>1</sup> Or: "appropriately-bound functions/properties/constants representing the Processing API"
+<sup>1</sup> More precisely: Appropriately-bound proxy functions/properties and constants representing the Processing API.
