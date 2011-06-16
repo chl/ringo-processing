@@ -87,7 +87,7 @@ This second style is particularly useful if you want to package sketches as re-u
 
 Of course! Just start `ringo`, wire up ringo-processing and let it roll.
 
-A typical (if not particularly exciting) REPL session might look like that:
+A typical (if not particularly exciting) REPL session might look like this:
 
     require("ringo-processing").wire(this)
     run({exit: false}) // do not exit when frame is closed
@@ -102,7 +102,7 @@ A typical (if not particularly exciting) REPL session might look like that:
 
 In order to run and modify an existing sketch interactively, explore the `ringo` `-i` option:
 
-    ringo -i ringo-processing-samples/lp/example-9-8.js
+    ringo -i ringo-processing-samples/learning-processing/example-9-8.js
 
 ## Web Applications
 
@@ -127,7 +127,8 @@ Work in progress. Only OpenGL tested so far. Use `use`:
 
 ## Related Projects
 
-- [ruby-processing](http://github.com/jashkenas/ruby-processing): The gold standard.
+- [processing.py](https://github.com/jdf/processing.py)
+- [ruby-processing](https://github.com/jashkenas/ruby-processing)
 - [incanter-processing](http://data-sorcery.org/2009/08/30/processing-intro/)
 - [Spde](http://technically.us/spde/About)
 
