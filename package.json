@@ -1,7 +1,7 @@
 {
     "name": "ringo-processing",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": ["viz", "processing"],
     "maintainers": [{
         "name": "Christian Langreiter",
@@ -17,11 +17,7 @@
         "web": "http://robert42.com/",
         "email": "r.thurnher@gmail.com"
     }],
-    "licenses": [],
     "directories": {
-        "lib": "lib",
-        "jars": [
-            "jars"
-        ]
+        "lib": "lib"
     }
 }

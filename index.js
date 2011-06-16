@@ -1,5 +1,5 @@
-var constants = require("./processing/constants");
-var Sketch = exports.Sketch = require("./processing/sketch").Sketch;
+var constants = require("./lib/constants");
+var Sketch = exports.Sketch = require("./lib/sketch").Sketch;
 
 for (let x in constants)
     exports[x] = constants[x];

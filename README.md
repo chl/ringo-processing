@@ -8,11 +8,6 @@ This is alpha code and mostly untested on anything other than OS X.
 
 If you have questions (or answers!) please get in touch (on e.g. the [RingoJS mailing list](http://groups.google.com/group/ringojs) or the [#ringojs IRC channel on Freenode](irc://irc.freenode.net/ringojs)).
 
-## News
-
-- 2010-05-09: Support for sketch-specific libraries
-- 2010-04-06: First version of `ringo/processing/web`
-
 ## Installation
 
 Once you have a [working RingoJS installation](http://github.com/ringo/ringojs#readme):
@@ -35,7 +30,7 @@ ringo-processing currently supports two styles of writing sketches.
 
 A sketch object (accessible as `sketch`) and the Processing API<sup>1</sup> are injected into a given scope:
 
-    require("ringo/processing").wire(this);
+    require("ringo-processing").wire(this);
 
     function setup() {
         size(400, 400);
@@ -56,7 +51,7 @@ A sketch object (accessible as `sketch`) and the Processing API<sup>1</sup> are 
 
 This second style is particularly useful if you want to package sketches as re-usable RingoJS modules:
 
-    var {Sketch, RGB} = require("ringo/processing");
+    var {Sketch, RGB} = require("ringo-processing");
 
     export("X");
 
@@ -94,7 +89,7 @@ Of course! Just start `ringo`, wire up ringo-processing and let it roll.
 
 A typical (if not particularly exciting) REPL session might look like that:
 
-    require("ringo/processing").wire(this)
+    require("ringo-processing").wire(this)
     run({exit: false}) // do not exit when frame is closed
     r = random, bg = background, f = fill // let's define some abbreviations
     t = 10 // parametric design is about to begin!
@@ -111,7 +106,7 @@ In order to run and modify an existing sketch interactively, explore the `ringo`
 
 ## Web Applications
 
-For now, see [samples/web](http://github.com/chl/ringo-processing/tree/master/samples/web). More spectacular documentation is being prepared.
+Spectacular documentation is being prepared. Slowly.
 
 ## Processing Libraries
 
